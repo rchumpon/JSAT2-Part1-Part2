@@ -1,8 +1,7 @@
-// File: Q2.3_addObjects.js
+// File: Q2.3_changeObjects.js
 // Description: File to show how to change the data of the properties to the object called myMovie.
 // Author: Roongroj Chumpon
 // Date: 08/09/25
-
 
 let myMovie = {
   'Title' : 'The longest day',
