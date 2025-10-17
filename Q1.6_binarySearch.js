@@ -2,13 +2,14 @@
 // Description: This file shows how binary search works
 // Author: Roongroj Chumpon
 // Date: 06/09/25
+// Version: 1.0.0
 
 // Create array to search
 const sortedArray = [2, 6, 12, 18, 32, 48, 56, 60, 72,];
 console.log(sortedArray)
 
 // Set the value we are searching for.
-const key = 48;
+const key = 20;
 console.log(`Key: ${key}`);
 
 // Create the binarySearch function
