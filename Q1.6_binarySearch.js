@@ -2,7 +2,7 @@
 // Description: This file shows how binary search works
 // Author: Roongroj Chumpon
 // Date: 06/09/25
-// Version: 1.0.0
+// Version: 1.0.1
 
 // Create array to search
 const sortedArray = [2, 6, 12, 18, 32, 48, 56, 60, 72,];
@@ -37,12 +37,12 @@ function binarySearch(array, value){
       found = mid;
       break;
     } else if (array[mid] < value){
-      // look at the right side of the array
+      // Look at the right side of the array
       console.log(`Array[${mid}]: ${array[mid]}`);
       start = mid + 1;
-      console.log(`Start: ${start}: End: ${end}`)
+      console.log(`Start: ${start}, End: ${end}`)
     } else {
-      // look at the left side of the array
+      // Look at the left side of the array
       console.log(`Array[${mid}]: ${array[mid]}`);
       end = mid - 1;
       console.log(`Start: ${start}, ${end}`);
