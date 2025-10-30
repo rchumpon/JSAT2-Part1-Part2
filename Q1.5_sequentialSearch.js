@@ -9,7 +9,7 @@ const searchArray = [15, 70, 65, 30, 85, 90, 25, 40];
 console.log(searchArray);
 
 // Set the value we are searching for.
-let key = 100;
+let key = 85;
 console.log(`Key: ${key}`);
 
 // Create the sequentialSearch function to perform a sequential search.

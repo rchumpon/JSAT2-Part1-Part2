@@ -9,7 +9,7 @@ const sortedArray = [2, 6, 12, 18, 32, 48, 56, 60, 72,];
 console.log(sortedArray)
 
 // Set the value we are searching for.
-const key = 40;
+const key = 18;
 console.log(`Key: ${key}`);
 
 // Create the binarySearch function
