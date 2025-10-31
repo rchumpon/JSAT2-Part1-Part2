@@ -1,0 +1,91 @@
+Record the results of your test plans in your test plan document.
+<Record the name of your test plan file:>
+
+Test Plan and Result-sequentialSearch-binarySearch.xlxs
+
+Record the results in your test plan file
+
+Function Tested: sequentialSearch (array, value)
+Test Description: Search for a value that exists in the array (middle element).
+Array: [15, 70, 65, 30, 85, 90, 25, 40]
+Search value: 85
+Checking each value:
+Array [0]: 15
+Array [1]: 70
+Array [2]: 65
+Array [3]: 30
+Array [4]: 85
+Value 85 was found at index 4.
+Expected result: 4 (index of the value in the array) 
+Actual result: 4 (value found at index 4)
+Pass/Fail: Pass
+
+Function Tested: sequentialSearch (array, value)
+Test Description: Search for a value that does not exist in the array.
+Array: [15, 70, 65, 30, 85, 90, 25, 40]
+Search Value: 100
+Checking each value:
+Array [0]: 15
+Array [1]: 70
+Array [2]: 65
+Array [3]: 30
+Array [4]: 85
+Array [5]: 90
+Array [6]: 25
+Array [7]: 40
+Value 100 was not found in the array.
+Expected result: -1 (value not found) 
+Actual result: -1 (value not found)
+Pass/Fail: Pass
+
+
+Function Tested: binarySearch (array, value)
+Test Description: Search for a value that exists in the sorted array.
+Array: [2, 6, 12, 18, 32, 48, 56, 60, 72]
+Search Value: 18
+Initialized search range: Start = 0, End = 8
+Iteration 1:
+ Mid = 4
+ Array [4] = 32
+ Value < Mid => End = 3
+Iteration 2:
+ Mid = 1
+ Array [1] = 6
+ Value > Mid => Start = 2
+Iteration 3:
+ Mid = 2
+ Array [2] = 12
+ Value > Mid => Start = 3
+Iteration 4:
+ Mid = 3
+ Array [3] = 18
+Match found.
+Expected result: 3 (index of the value in the array)
+Actual result: 3 (value found at index 3)
+Pass/Fail: Pass
+
+
+
+Function Tested: binarySearch (array, value)
+Test Description: Search for a value that does not exist in the sorted array.
+Array: [2, 6, 12, 18, 32, 48, 56, 60, 72]
+Search Value: 40
+Initialized search range: Start = 0, End = 8
+Iteration 1:
+ Mid = 4
+ Array [4] = 32
+ Value > Mid => Start = 5
+Iteration 2:
+ Mid = 6
+ Array [6] = 56
+ Value < Mid => End = 5
+Iteration 3:
+ Mid = 5
+ Array [5] = 48
+ Value < Mid => End = 4
+Search terminated: Start > End
+Expected result: -1 (value not found)
+Actual result: -1 (value not found)
+Pass/Fail: Pass
+
+
